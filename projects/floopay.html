@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Floopay - Modern freelancer payment management app case study">
+    <meta name="keywords" content="UI/UX Design, Floopay, Payment App, Freelancer, Case Study">
+    <meta name="author" content="Your Name">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Floopay Case Study - UI/UX Designer Portfolio">
+    <meta property="og:description" content="Modern freelancer payment management app case study">
+    <meta property="og:type" content="website">
+
+    <title>Floopay Case Study - UI/UX Designer Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Inter:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container nav__container">
+            <a href="../index.html" class="nav__logo">
+                <img src="../assets/home/logo.png" alt="MEL logo">
+            </a>
+
+            <div class="nav__toggle" id="navToggle" aria-label="Toggle navigation">
+                <span class="nav__toggle-bar"></span>
+                <span class="nav__toggle-bar"></span>
+                <span class="nav__toggle-bar"></span>
+            </div>
+
+            <ul class="nav__menu" id="navMenu">
+                <li><a href="../index.html#about" class="nav__link">About Me</a></li>
+                <li><a href="../index.html#projects" class="nav__link">Projects</a></li>
+                <li><a href="../contact.html" class="nav__link nav__cta">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Case Study Content -->
+    <main class="case-study">
+        <!-- Hero Section -->
+        <section class="case-study__hero">
+            <div class="container">
+                <div class="case-study__header">
+                    <h1>Floo Pay</h1>
+                    <p class="case-study__tags">
+                        <a href="#ux-research" class="case-study__tag-link">UX Research</a> | 
+                        <a href="#ux-design" class="case-study__tag-link">UX Design</a> | 
+                        <a href="#key-takeaways" class="case-study__tag-link">Key Takeaways</a>
+                    </p>
+                </div>
+
+                <div class="case-study__mockup-wrapper">
+                    <div class="case-study__mockup-bg"></div>
+                    <img src="../assets/floopay/floopay-screens.svg" alt="Floo Pay app screens"
+                        class="case-study__mockup-img" loading="lazy">
+                    <span class="case-study__decoration case-study__decoration--x1">✕</span>
+                    <span class="case-study__decoration case-study__decoration--x2">✕</span>
+                </div>
+
+                <div class="case-study__info">
+                    <p class="case-study__overview"><strong>Overview:</strong> Kutana Pay is a cross-border payment
+                        platform where users can create wallets, deposit and withdraw money in different currencies,
+                        convert between currencies, and add recipients.</p>
+                    <p class="case-study__detail"><strong>Role:</strong> UX Researcher, UX/UI designer</p>
+                    <p class="case-study__detail"><strong>Toolkit:</strong> Figma, FigJam, Notability</p>
+                    <a href="#" class="btn btn--outline case-study__cta">Test Prototype</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- UX Research Section -->
+        <section id="ux-research" class="case-study__section case-study__ux-research">
+            <div class="container">
+                <h2 class="case-study__section-title case-study__section-title--red">UX Research</h2>
+                <hr class="case-study__divider">
+
+                <div class="ux-research__content">
+                    <div class="ux-research__block">
+                        <h3 class="ux-research__heading">• Background:</h3>
+                        <p class="ux-research__text">Many users struggle with hidden conversion fees, disorganized
+                            transactions, and the complexity of tracking income from different sources. Users need a
+                            transparent, user-friendly platform for handling transactions, currency conversion, and
+                            wallet organization.</p>
+                    </div>
+
+                    <div class="ux-research__goal-card">
+                        <h3 class="ux-research__goal-title">• Research Goal:</h3>
+                        <p class="ux-research__goal-text">understand the <strong>pain points and needs of users managing
+                                multiple currencies and transactions</strong> to design and create a seamless experience
+                            that <strong>enhances control over personal and business finances.</strong></p>
+                    </div>
+
+                    <div class="ux-research__block">
+                        <h3 class="ux-research__heading">• Methodologies:</h3>
+                        <ol class="ux-research__list">
+                            <li>User Interviews</li>
+                            <li>Wish cards & Thinking-Aloud</li>
+                        </ol>
+                    </div>
+
+                    <!-- User Interviews Subsection -->
+                    <div class="ux-research__subsection">
+                        <h3 class="ux-research__subtitle">User Interviews</h3>
+
+                        <div class="ux-research__block">
+                            <h4 class="ux-research__heading">• Overview:</h4>
+                            <p class="ux-research__text">Semi-structured qualitative interviews via Zoom and in-person
+                                with 8 participants (Freelancers, Business Owners, and Remote Workers), who manage
+                                finances across multiple accounts and currencies.</p>
+                        </div>
+
+                        <div class="ux-research__block">
+                            <h4 class="ux-research__heading">• Affinity Mapping:</h4>
+                            <div class="affinity-map" id="affinityMapContainer">
+                                <div class="affinity-grid">
+                                    <!-- Multi currency management -->
+                                    <div class="affinity-category">
+                                        <h5 class="affinity-category__title">Multi currency management</h5>
+                                        <div class="affinity-category__quotes">
+                                            <div class="affinity-quote affinity-quote--mint">"I don't know how much I'm
+                                                losing in currency conversion. It feels like I always get less money
+                                                than expected."</div>
+                                            <div class="affinity-quote affinity-quote--cream">"Why can't I see the
+                                                exchange rate breakdown before making a transfer? Hidden fees make me
+                                                anxious."</div>
+                                            <div class="affinity-quote affinity-quote--mint">"Sometimes the exchange
+                                                rate is different from what I see online, and I don't understand why."
+                                            </div>
+                                            <div class="affinity-quote affinity-quote--cream">"I wish I could lock in a
+                                                good exchange rate before making a transfer."</div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Business & Personal separation of Finances -->
+                                    <div class="affinity-category">
+                                        <h5 class="affinity-category__title">Business & Personal separation of Finances
+                                        </h5>
+                                        <div class="affinity-category__quotes">
+                                            <div class="affinity-quote affinity-quote--blue">"I mix up my personal and
+                                                work transactions all the time. I need a better way to separate them."
+                                            </div>
+                                            <div class="affinity-quote affinity-quote--pink">"At the end of the month, I
+                                                struggle to filter out which transactions are business-related for tax
+                                                purposes."</div>
+                                            <div class="affinity-quote affinity-quote--blue">"I need a way to export
+                                                business expenses for reimbursement easily."</div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Transaction History & Search -->
+                                    <div class="affinity-category">
+                                        <h5 class="affinity-category__title">Transaction History & Search</h5>
+                                        <div class="affinity-category__quotes">
+                                            <div class="affinity-quote affinity-quote--mint">"Scrolling through past
+                                                transactions is a nightmare. I can't find what I need without wasting
+                                                time."</div>
+                                            <div class="affinity-quote affinity-quote--cream">"I wish I could search for
+                                                transactions by category, not just by date."</div>
+                                            <div class="affinity-quote affinity-quote--mint">"It's frustrating when I
+                                                don't remember the exact amount or date of a transaction, so I can't
+                                                find it easily."</div>
+                                            <div class="affinity-quote affinity-quote--cream">"I'd like to tag certain
+                                                transactions as important so I can find them later."</div>
+                                        </div>
+                                    </div>
+
+                                    <!-- User Control & Transparency -->
+                                    <div class="affinity-category">
+                                        <h5 class="affinity-category__title">User Control & Transparency</h5>
+                                        <div class="affinity-category__quotes">
+                                            <div class="affinity-quote affinity-quote--blue">"I wish I could review the
+                                                exact breakdown of what I'm paying before I confirm a transaction."
+                                            </div>
+                                            <div class="affinity-quote affinity-quote--pink">"I feel like I'm always
+                                                being charged unexpected fees, and I don't know why."</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="affinity-map__magnify" onclick="openFullscreen('affinityMapContainer')">
+                                    MAGNIFY
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <circle cx="11" cy="11" r="8"></circle>
+                                        <path d="M21 21l-4.35-4.35"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Research Findings Subsection -->
+                    <div class="ux-research__subsection">
+                        <h3 class="ux-research__subtitle">Research Findings</h3>
+
+                        <div class="findings-grid">
+                            <div class="finding-card">
+                                <img src="../assets/floopay/icon/currency-icon.svg" alt="Currency icon"
+                                    class="finding-card__icon">
+                                <h4 class="finding-card__title">Managing multiple currencies is frustrating!</h4>
+                                <p class="finding-card__text">Need for transparent conversion fees.</p>
+                            </div>
+
+                            <div class="finding-card">
+                                <img src="../assets/floopay/icon/expenses-icon.svg" alt="Expenses icon"
+                                    class="finding-card__icon">
+                                <h4 class="finding-card__title">Business vs. Personal Expenses Need Separation</h4>
+                                <p class="finding-card__text">A multi-wallet system is crucial.</p>
+                            </div>
+
+                            <div class="finding-card">
+                                <img src="../assets/floopay/icon/filter-icon.svg" alt="Filter icon"
+                                    class="finding-card__icon">
+                                <h4 class="finding-card__title">Transaction History Needs Better Filters & Search</h4>
+                                <p class="finding-card__text">Users struggle to find past transactions.</p>
+                            </div>
+
+                            <div class="finding-card">
+                                <img src="../assets/floopay/icon/hide-icon.svg" alt="Hidden fees icon"
+                                    class="finding-card__icon">
+                                <h4 class="finding-card__title">High Fees and Hidden Charges are a Concern</h4>
+                                <p class="finding-card__text">A fee transparency breakdown is necessary.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Persona #1 Subsection -->
+                    <div class="ux-research__subsection persona--red">
+                        <h3 class="ux-research__subtitle">Persona #1</h3>
+
+                        <div class="persona">
+                            <div class="persona__header">
+                                <div class="persona__photo-wrapper">
+                                    <img src="../assets/floopay/persona-1.svg" alt="Maria Gonzalez"
+                                        class="persona__photo">
+                                </div>
+                                <div class="persona__info">
+                                    <h4 class="persona__name">Maria Gonzalez</h4>
+                                    <p class="persona__age">38 y/o</p>
+                                    <p class="persona__detail">
+                                        <span class="persona__icon">💼</span> Owner of an online boutique
+                                    </p>
+                                    <p class="persona__detail">
+                                        <span class="persona__icon">📍</span> Barcelona, Spain
+                                    </p>
+
+                                    <h5 class="persona__tools-title">Frequently-used tools</h5>
+                                    <div class="persona__tools">
+                                        <img src="../assets/floopay/shopify-logo.svg" alt="Shopify"
+                                            class="persona__tool-logo">
+                                        <img src="../assets/floopay/paypal-logo.svg" alt="PayPal"
+                                            class="persona__tool-logo">
+                                        <img src="../assets/floopay/sheets-logo.svg" alt="Google Sheets"
+                                            class="persona__tool-logo">
+                                        <img src="../assets/floopay/wise-logo.svg" alt="Wise"
+                                            class="persona__tool-logo">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="persona__card">
+                                <div class="persona__section">
+                                    <h5 class="persona__section-title">Bio</h5>
+                                    <p class="persona__section-text">Maria is the owner of an online boutique in
+                                        Barcelona, Spain. With a degree in Business Administration and International
+                                        Trade, she has always been passionate about helping small businesses expand
+                                        globally. Her experience as an export consultant made her aware of the
+                                        challenges of cross-border payments, exchange rates, and financial management.
+                                        As her boutique grew, she struggled to track business expenses, manage multiple
+                                        currencies, and avoid hidden fees.</p>
+                                </div>
+
+                                <div class="persona__section">
+                                    <h5 class="persona__section-title">Goals</h5>
+                                    <ul class="persona__list persona__list--goals">
+                                        <li>Manage business expenses and profits in a structured way</li>
+                                        <li>Easily send and receive payments from international customers</li>
+                                        <li>Convert currencies efficiently without losing money on hidden fees</li>
+                                    </ul>
+                                </div>
+
+                                <div class="persona__section">
+                                    <h5 class="persona__section-title persona__section-title--pain">Pain points</h5>
+                                    <ul class="persona__list persona__list--pain">
+                                        <li>Exchange rate fluctuations impact her profits unpredictably</li>
+                                        <li>Complicated transaction histories make financial tracking a challenge</li>
+                                        <li>No clear way to categorize business vs. personal expenses</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Persona #2 Subsection -->
+                    <div class="ux-research__subsection persona--blue">
+                        <h3 class="ux-research__subtitle">Persona #2</h3>
+
+                        <div class="persona persona--blue">
+                            <div class="persona__header">
+                                <div class="persona__photo-wrapper">
+                                    <img src="../assets/floopay/persona-2.svg" alt="Ahmed Rahman"
+                                        class="persona__photo">
+                                </div>
+                                <div class="persona__info">
+                                    <h4 class="persona__name">Ahmed Rahman</h4>
+                                    <p class="persona__age">28 y/o</p>
+                                    <p class="persona__detail">
+                                        <span class="persona__icon">💼</span> Remote Software Engineer
+                                    </p>
+                                    <p class="persona__detail">
+                                        <span class="persona__icon">📍</span> Travels between UAE, Thailand, and Germany
+                                    </p>
+
+                                    <h5 class="persona__tools-title">Frequently-used tools</h5>
+                                    <div class="persona__tools">
+                                        <img src="../assets/floopay/revolut-logo.svg" alt="Revolut"
+                                            class="persona__tool-logo">
+                                        <img src="../assets/floopay/vscode-logo.svg" alt="VS Code"
+                                            class="persona__tool-logo">
+                                        <img src="../assets/floopay/sheets-logo.svg" alt="Google Sheets"
+                                            class="persona__tool-logo">
+                                        <img src="../assets/floopay/wise-logo.svg" alt="Wise"
+                                            class="persona__tool-logo">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="persona__card">
+                                <div class="persona__section">
+                                    <h5 class="persona__section-title">Bio</h5>
+                                    <p class="persona__section-text">Ahmed Rahman is a remote software engineer who
+                                        works remotely with a background in Computer Science from the University of
+                                        Toronto. Constantly moving between the UAE, Thailand, and Germany, he struggles
+                                        with managing multiple currencies and optimizing conversion fees while
+                                        maintaining a clear budget. His lifestyle requires a seamless financial solution
+                                        that can adapt to his nomadic needs without excessive fees.</p>
+                                </div>
+
+                                <div class="persona__section">
+                                    <h5 class="persona__section-title">Goals</h5>
+                                    <ul class="persona__list persona__list--goals">
+                                        <li>Have a single platform to manage finances across different currencies</li>
+                                        <li>Reduce conversion fees while working remotely</li>
+                                        <li>Set budgets for travel and daily expenses</li>
+                                    </ul>
+                                </div>
+
+                                <div class="persona__section">
+                                    <h5 class="persona__section-title persona__section-title--pain">Pain points</h5>
+                                    <ul class="persona__list persona__list--pain">
+                                        <li>Difficulty tracking expenses across different currencies</li>
+                                        <li>High withdrawal fees when using different banking networks</li>
+                                        <li>No easy way to set financial goals and monitor savings progress</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- UX Design Section -->
+        <section id="ux-design" class="case-study__section case-study__ux-design">
+            <div class="container">
+                <h2 class="case-study__section-title--red">UX Design</h2>
+                <div class="case-study__divider"></div>
+
+                <div class="ux-design__content">
+                    <div class="ux-design__block">
+                        <h3 class="ux-design__subtitle">Prioritization</h3>
+                        <div class="ux-design__subblock">
+                            <h4 class="ux-design__heading">• Project Goals:</h4>
+                            <p class="ux-design__text">While Business goals were mainly focused in gaining as much users
+                                as possible by making clear how the platform works, I had a deeper vision of what users
+                                wanted and I was able to identify where the two of them aligned.</p>
+                        </div>
+                    </div>
+
+                    <div class="ux-design__venn-section">
+                        <div class="affinity-map" id="vennDiagramContainer">
+                            <img src="../assets/floopay/venn-diagaram.svg"
+                                alt="Prioritization Venn Diagram - Business, Project, and User Goals"
+                                class="affinity-map__image" id="vennDiagramImage">
+                            <button class="affinity-map__magnify" onclick="openFullscreen('vennDiagramContainer')">
+                                MAGNIFY
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <circle cx="11" cy="11" r="8"></circle>
+                                    <path d="M21 21l-4.35-4.35"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="ux-design__block" style="margin-top: var(--spacing-xxl);">
+                        <h3 class="ux-design__subtitle">Wireframes</h3>
+                        <div class="ux-design__subblock">
+                            <p class="ux-design__text">According to the project goals, I sketched 4 main pages for
+                                dashboard, wallets, covert, and transactions. Considering the goals of my personas, the
+                                end user should be able to complete their task flows in these 4 categories.</p>
+                        </div>
+                    </div>
+
+                    <div class="ux-design__image-section">
+                        <div class="affinity-map" id="wireframesContainer">
+                            <img src="../assets/floopay/wireframe-sketches.svg"
+                                alt="Wireframe sketches for dashboard, wallets, convert, and transactions"
+                                class="affinity-map__image" id="wireframesImage">
+                            <button class="affinity-map__magnify" onclick="openFullscreen('wireframesContainer')">
+                                MAGNIFY
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <circle cx="11" cy="11" r="8"></circle>
+                                    <path d="M21 21l-4.35-4.35"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="ux-design__block" style="margin-top: var(--spacing-xxl);">
+                        <h3 class="ux-design__subtitle">Design system</h3>
+                        <div class="ux-design__subblock">
+
+                            <p class="design-system__intro">I have created a <strong>colour pallet</strong> with 1
+                                primary
+                                colour as
+                                well as 2 secondary colour, along with 3 neutral ones. As for
+                                <strong>Typography</strong>, I
+                                decided
+                                to go with Inter for better legibility.
+                            </p>
+
+                            <div class="design-system__main-grid">
+                                <!-- Left Column: Typography and Components -->
+                                <div class="design-system__left-col">
+                                    <div class="design-system__subsection">
+                                        <h4 class="ux-design__heading">Typography</h4>
+                                        <div class="typography-showcase">
+                                            <div class="typography-row">
+                                                <div class="typography-spec">XXS/Regular</div>
+                                                <div class="typography-size">12 px</div>
+                                                <div class="typography-example typography--xxs-reg">Without leaps of
+                                                    imagination
+                                                    or
+                                                    dreaming, we lose the excitement of possibilities.</div>
+                                            </div>
+                                            <div class="typography-row">
+                                                <div class="typography-spec">XXS/Semibold</div>
+                                                <div class="typography-size">12 px</div>
+                                                <div class="typography-example typography--xxs-semi">Without leaps of
+                                                    imagination or
+                                                    dreaming, we lose the excitement of possibilities.</div>
+                                            </div>
+                                            <div class="typography-row">
+                                                <div class="typography-spec">XS/Regular</div>
+                                                <div class="typography-size">14 px</div>
+                                                <div class="typography-example typography--xs-reg">Without leaps of
+                                                    imagination
+                                                    or
+                                                    dreaming, we lose the excitement of possibilities.</div>
+                                            </div>
+                                            <div class="typography-row">
+                                                <div class="typography-spec">XS/Semibold</div>
+                                                <div class="typography-size">14 px</div>
+                                                <div class="typography-example typography--xs-semi">Without leaps of
+                                                    imagination
+                                                    or
+                                                    dreaming, we lose the excitement of possibilities.</div>
+                                            </div>
+                                            <div class="typography-row">
+                                                <div class="typography-spec">S/Semibold</div>
+                                                <div class="typography-size">16 px</div>
+                                                <div class="typography-example typography--s-semi">Without leaps of
+                                                    imagination
+                                                    or
+                                                    dreaming, we lose the excitement of possibilities.</div>
+                                            </div>
+                                            <div class="typography-row">
+                                                <div class="typography-spec">S/Regular</div>
+                                                <div class="typography-size">16 px</div>
+                                                <div class="typography-example typography--s-reg">Without leaps of
+                                                    imagination
+                                                    or
+                                                    dreaming, we lose the excitement of possibilities.</div>
+                                            </div>
+                                            <div class="typography-row">
+                                                <div class="typography-spec">L/Regular</div>
+                                                <div class="typography-size">24 px</div>
+                                                <div class="typography-example typography--l-reg">Without leaps of
+                                                    imagination
+                                                    or
+                                                    dreaming, we lose the excitement of possibilities.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="design-system__subsection">
+                                        <h4 class="ux-design__heading">Alerts</h4>
+                                        <div class="ds-component-wrapper">
+                                            <img src="../assets/floopay/alert-strip.svg" alt="Alert Design"
+                                                class="ds-asset-img">
+                                        </div>
+                                    </div>
+
+                                    <div class="design-system__subsection">
+                                        <h4 class="ux-design__heading">Wallet cards</h4>
+                                        <div class="ds-component-wrapper">
+                                            <img src="../assets/floopay/wallet-asset.svg" alt="Wallet Card Design"
+                                                class="ds-asset-img">
+                                        </div>
+                                    </div>
+
+                                    <div class="design-system__bottom-flex">
+                                        <div class="design-system__subsection">
+                                            <h4 class="ux-design__heading">Graph cards</h4>
+                                            <div class="ds-component-wrapper">
+                                                <img src="../assets/floopay/income-chart.svg" alt="Graph Card Design"
+                                                    class="ds-asset-img">
+                                            </div>
+                                        </div>
+
+                                        <div class="design-system__subsection">
+                                            <h4 class="ux-design__heading">Buttons</h4>
+                                            <div class="component-svg--buttons">
+                                                <div class="ds-btn-row">
+                                                    <img src="../assets/floopay/main-button.svg" alt="Primary Button"
+                                                        class="ds-asset-img btn-asset">
+                                                    <img src="../assets/floopay/hamburger-menu-1.svg" alt="Menu Icon"
+                                                        class="ds-asset-img icon-asset">
+                                                </div>
+                                                <div class="ds-btn-row">
+                                                    <img src="../assets/floopay/button-2.svg" alt="Secondary Button"
+                                                        class="ds-asset-img btn-asset">
+                                                    <img src="../assets/floopay/hamburger-menu-2.svg"
+                                                        alt="Menu Icon Alt" class="ds-asset-img icon-asset">
+                                                </div>
+                                                <div class="ds-btn-row">
+                                                    <img src="../assets/floopay/button-1.svg" alt="Outline Button"
+                                                        class="ds-asset-img btn-asset">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Right Column: Colour Pallet -->
+                                <div class="design-system__right-col">
+                                    <div class="design-system__subsection">
+                                        <h4 class="ux-design__heading">Colour pallet</h4>
+                                        <div class="palette-showcase">
+                                            <div class="palette-card">
+                                                <div class="palette-color" style="background-color: #6583EF;"></div>
+                                                <div class="palette-info">
+                                                    <div class="palette-name">Primary colour</div>
+                                                    <div class="palette-hex">#6583EF</div>
+                                                </div>
+                                            </div>
+                                            <div class="palette-card">
+                                                <div class="palette-color" style="background-color: #5C5CFE;"></div>
+                                                <div class="palette-info">
+                                                    <div class="palette-name">Secondary #1</div>
+                                                    <div class="palette-hex">#5C5CFE</div>
+                                                </div>
+                                            </div>
+                                            <div class="palette-card">
+                                                <div class="palette-color" style="background-color: #E9EDF2;"></div>
+                                                <div class="palette-info">
+                                                    <div class="palette-name">Secondary #2</div>
+                                                    <div class="palette-hex">#E9EDF2</div>
+                                                </div>
+                                            </div>
+                                            <div class="palette-card">
+                                                <div class="palette-color" style="background-color: #A4A9B0;"></div>
+                                                <div class="palette-info">
+                                                    <div class="palette-name">Neutral #3</div>
+                                                    <div class="palette-hex">#A4A9B0</div>
+                                                </div>
+                                            </div>
+                                            <div class="palette-card">
+                                                <div class="palette-color" style="background-color: #121212;"></div>
+                                                <div class="palette-info">
+                                                    <div class="palette-name">Neural #2</div>
+                                                    <div class="palette-hex">#121212</div>
+                                                </div>
+                                            </div>
+                                            <div class="palette-card">
+                                                <div class="palette-color"
+                                                    style="background-color: #FFFFFF; border: 1px solid #eee;"></div>
+                                                <div class="palette-info">
+                                                    <div class="palette-name">Neutral #1</div>
+                                                    <div class="palette-hex">#FFFFFF</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div> <!-- end ux-design__subblock -->
+
+                        <div class="design-system__view-library">
+                            <button class="btn-view-library">View Library</button>
+                        </div>
+                    </div> <!-- end ux-design__block -->
+                </div> <!-- end ux-design__content -->
+            </div> <!-- end container -->
+        </section>
+
+        <!-- Key Takeaways Section -->
+        <section id="key-takeaways" class="case-study__section case-study__takeaways">
+            <div class="container">
+                <h2 class="case-study__section-title--red">Key Takeaways</h2>
+                <div class="case-study__divider"></div>
+
+                <div class="takeaways__content">
+                    <div class="takeaways__block">
+                        <h3 class="takeaways__subtitle">• Challenges:</h3>
+                        <div class="takeaways__list">
+                            <p class="takeaways__item">- To find the right angle together with an interesting story to
+                                tell when dealing with a widely explored industry such as Fintech.</p>
+                            <p class="takeaways__item">- A huge effort in prioritisation when finding the starting
+                                point.</p>
+                            <p class="takeaways__item">- To think about detailed aspects users might need interacting
+                                with a FinPlatform without getting overwhelmed.</p>
+                        </div>
+                    </div>
+
+                    <div class="takeaways__block">
+                        <h3 class="takeaways__subtitle">• Lessons learned:</h3>
+                        <div class="takeaways__list">
+                            <p class="takeaways__item">- The effort of keeping it simple can make a difference in the
+                                final outcome, starting form wireframes up to the prototype experience.</p>
+                            <p class="takeaways__item">- The importance of a well-designed UI library, that is built up
+                                using components, variants and frames.</p>
+                            <p class="takeaways__item">- Designing in a consistent way can truly help speed up the whole
+                                process.</p>
+                        </div>
+                    </div>
+
+                    <div class="takeaways__actions">
+                        <button class="btn-test-prototype">Test Prototype</button>
+                    </div>
+                </div>
+
+                <!-- Back to Top Button -->
+                <button class="btn-back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+                    aria-label="Back to Top">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F64134" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 19V5M5 12l7-7 7 7" />
+                    </svg>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__social">
+                <a href="https://linkedin.com" class="footer__social-link" aria-label="LinkedIn" target="_blank"
+                    rel="noopener">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                    </svg>
+                </a>
+                <a href="mailto:hello@melika.com" class="footer__social-link" aria-label="Email">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z" />
+                    </svg>
+                </a>
+            </div>
+            <p class="footer__credit">Created by Melika Mohammadzadeh</p>
+        </div>
+    </footer>
+
+    <!-- Fullscreen Overlay -->
+    <div class="fullscreen-overlay" id="fullscreenOverlay">
+        <button class="fullscreen-overlay__close" onclick="closeFullscreen()">&times;</button>
+        <div class="fullscreen-overlay__content" id="fullscreenContent"></div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+    <script>
+        // Fullscreen content functionality
+        function openFullscreen(elementId) {
+            const element = document.getElementById(elementId);
+            const overlay = document.getElementById('fullscreenOverlay');
+            const fullscreenContent = document.getElementById('fullscreenContent');
+
+            fullscreenContent.innerHTML = '';
+
+            // Check if there's an affinity-grid (HTML content)
+            const affinityGrid = element.querySelector('.affinity-grid');
+            if (affinityGrid) {
+                const clone = affinityGrid.cloneNode(true);
+                clone.classList.add('fullscreen-affinity-grid');
+                fullscreenContent.appendChild(clone);
+            } else {
+                // Check if there's an image
+                const img = element.querySelector('img');
+                if (img) {
+                    const fullImg = document.createElement('img');
+                    fullImg.src = img.src;
+                    fullImg.alt = img.alt;
+                    fullImg.className = 'fullscreen-overlay__image';
+                    fullscreenContent.appendChild(fullImg);
+                }
+            }
+
+            overlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeFullscreen() {
+            const overlay = document.getElementById('fullscreenOverlay');
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        // Close on overlay click
+        document.getElementById('fullscreenOverlay').addEventListener('click', function (e) {
+            if (e.target === this) {
+                closeFullscreen();
+            }
+        });
+
+        // Close on Escape key
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                closeFullscreen();
+            }
+        });
+    </script>
+</body>
+
+</html>

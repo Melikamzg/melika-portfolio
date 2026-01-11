@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="UI/UX Designer Portfolio - Showcasing innovative design solutions for web and mobile applications.">
+    <meta name="keywords" content="UI/UX Design, Portfolio, Web Design, Mobile Design, User Experience">
+    <meta name="author" content="Your Name">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="UI/UX Designer Portfolio">
+    <meta property="og:description" content="Showcasing innovative design solutions for web and mobile applications.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourwebsite.com">
+
+    <title>Home - UI/UX Designer Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container nav__container">
+            <a href="index.html" class="nav__logo">
+                <img src="assets/home/logo.png" alt="MEL logo">
+            </a>
+
+            <div class="nav__toggle" id="navToggle" aria-label="Toggle navigation">
+                <span class="nav__toggle-bar"></span>
+                <span class="nav__toggle-bar"></span>
+                <span class="nav__toggle-bar"></span>
+            </div>
+
+            <ul class="nav__menu" id="navMenu">
+                <li><a href="#about" class="nav__link">About Me</a></li>
+                <li><a href="#projects" class="nav__link">Projects</a></li>
+                <li><a href="contact.html" class="nav__link nav__cta">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+        <div class="container">
+            <div class="hero__content">
+                <div class="hero__image-wrapper">
+                    <div class="hero__image">
+                        <img src="assets/home/me.jpeg" alt="Melika - UX Designer" loading="lazy">
+                    </div>
+                    <span class="hero__decoration hero__decoration--x-left">✕</span>
+                    <span class="hero__decoration hero__decoration--x-right">✕</span>
+                    <span class="hero__decoration hero__decoration--square"></span>
+                </div>
+                <div class="hero__text">
+                    <h1>Who am I?</h1>
+                    <p>I'm Melika! A UX Designer and Researcher based with a background in psychology. I specialize in
+                        creating user-centered digital experiences by combining rigorous research with thoughtful
+                        design. My work spans enterprise and fintech environments, where I focus on improving usability,
+                        user satisfaction, trust, and product experience.</p>
+                    <p>I've conducted global usability studies, quantitative analyses, and strategic product mapping at
+                        SAP, and led end-to-end research and design initiatives for B2B payment and escrow products at
+                        Kutana Technologies.</p>
+                    <a href="#" class="btn btn--outline">View CV</a>
+                </div>
+            </div>
+            <div class="hero__scroll-indicator">
+                <span class="hero__scroll-arrow">↓</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section class="quote-section">
+        <div class="quote-section__decorations">
+            <span class="quote-decoration quote-decoration--x quote-decoration--x1">✕</span>
+            <span class="quote-decoration quote-decoration--x quote-decoration--x2">✕</span>
+            <span class="quote-decoration quote-decoration--x quote-decoration--x3">✕</span>
+            <span class="quote-decoration quote-decoration--x quote-decoration--x4">✕</span>
+            <span class="quote-decoration quote-decoration--x quote-decoration--x5">✕</span>
+            <span class="quote-decoration quote-decoration--circle"></span>
+            <span class="quote-decoration quote-decoration--diamond"></span>
+            <span class="quote-decoration quote-decoration--dot"></span>
+            <span class="quote-decoration quote-decoration--rect quote-decoration--rect-left"></span>
+            <span class="quote-decoration quote-decoration--rect quote-decoration--rect-right"></span>
+            <span class="quote-decoration quote-decoration--small-square"></span>
+        </div>
+        <div class="container">
+            <blockquote class="quote-section__quote">
+                <p class="quote-line"><span class="quote-mark">"</span>The best designs are</p>
+                <p class="quote-line">those, dissolving into</p>
+                <p class="quote-line"><em class="quote-highlight">Behavior.</em><span class="quote-mark">"</span></p>
+                <cite>Donald Norman</cite>
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="projects__header">
+                <h2>Featured Projects</h2>
+                <p>Find out about my works: read through my case studies, have a look at final designs and try out
+                    prototypes I've built.</p>
+            </div>
+
+            <!-- Project Tabs -->
+            <div class="projects__tabs">
+                <button class="tab active" data-tab="company">Company Projects</button>
+                <button class="tab" data-tab="side">Side Projects</button>
+            </div>
+
+            <!-- Company Projects -->
+            <div class="tab-content active" id="company">
+                <div class="projects__grid">
+                    <div class="project-card">
+                        <div class="project-card__header">
+                            <img src="assets/home/company-projects/kutana-logo.svg" alt="Kutana Pay logo"
+                                class="project-card__logo">
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Kutana Pay</h3>
+                            <p class="project-card__description">Kutana Pay is a cross-border payment platform that
+                                enables businesses to manage payments efficiently, reduce costs, and operate with
+                                confidence through a highly compliant and secure financial system.</p>
+                            <a href="projects/kutanapay.html" class="project-card__link">See more <span>→</span></a>
+                        </div>
+                        <div class="project-card__mockup project-card__mockup--pink">
+                            <img src="assets/home/company-projects/kutanapay.svg" alt="Kutana Pay mockup"
+                                loading="lazy">
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-card__header">
+                            <img src="assets/home/company-projects/kutana-logo.svg" alt="Kutana logo"
+                                class="project-card__logo">
+                            <img src="assets/home/not-public.svg" alt="Not Public" class="project-card__badge">
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Kutana Trade Secure</h3>
+                            <p class="project-card__description">SAP for Me is the central, personalized portal for
+                                customers and partners to manage their entire SAP portfolio serving as the primary
+                                "digital companion" for support, licensing, and system management.</p>
+                            <a href="projects/floopay.html" class="project-card__link">See more <span>→</span></a>
+                        </div>
+                        <div class="project-card__mockup project-card__mockup--blue">
+                            <img src="assets/home/company-projects/sap-for-me.svg" alt="SAP For Me mockup"
+                                loading="lazy">
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-card__header">
+                            <img src="assets/home/company-projects/kutana-logo.svg" alt="Kutana logo"
+                                class="project-card__logo">
+                            <img src="assets/home/not-public.svg" alt="Not Public" class="project-card__badge">
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Kutana Trade Secure</h3>
+                            <p class="project-card__description">Trade Secure ensures safe business transactions between
+                                buyers and sellers through an insured escrow system that releases payments only when
+                                goods are verified.</p>
+                            <a href="projects/kutanapay.html" class="project-card__link">See more <span>→</span></a>
+                        </div>
+                        <div class="project-card__mockup project-card__mockup--gray">
+                            <img src="assets/home/company-projects/kutana-trade-secure.svg"
+                                alt="Kutana Trade Secure mockup" loading="lazy">
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-card__header">
+                            <img src="assets/home/company-projects/sap-logo.svg" alt="SAP logo"
+                                class="project-card__logo">
+                            <img src="assets/home/not-public.svg" alt="Not Public" class="project-card__badge">
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Harmony</h3>
+                            <p class="project-card__description">Harmony incentive dashboards refer to the persona-based
+                                dashboards within the SAP SuccessFactors Incentive Management solution, which provide
+                                real-time visibility into earnings, attainment, and performance metrics for
+                                administrators, managers, and sales representatives</p>
+                            <a href="#" class="project-card__link">See more <span>→</span></a>
+                        </div>
+                        <div class="project-card__mockup project-card__mockup--blue">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Side Projects -->
+            <div class="tab-content" id="side">
+                <div class="projects__grid projects__grid--side">
+                    <!-- Floo Pay - Featured Horizontal Card -->
+                    <div class="project-card project-card--featured">
+                        <span class="project-card__circle project-card__circle--top"></span>
+                        <div class="project-card__body">
+                            <div class="project-card__left">
+                                <div class="project-card__header">
+                                    <img src="assets/home/side-projects/floopay-logo.svg" alt="Floopay logo"
+                                        class="project-card__logo">
+                                </div>
+                                <div class="project-card__content">
+                                    <h3 class="project-card__title">Floo Pay</h3>
+                                    <p class="project-card__description">FlooPay is a digital financial management platform that enables users to track their income, expenses, transactions, and wallets while also providing currency conversion services.</p>
+                                    <a href="projects/floopay.html" class="project-card__link">See more <span>→</span></a>
+                                </div>
+                            </div>
+                            <div class="project-card__mockup project-card__mockup--white">
+                                <span class="project-card__circle project-card__circle--bottom"></span>
+                                <img src="assets/home/side-projects/floopay-mockup.svg" alt="Floopay mockup" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tote Bag App -->
+                    <div class="project-card project-card--small">
+                        <span class="project-card__circle project-card__circle--top"></span>
+                        <div class="project-card__header">
+                            <img src="assets/home/side-projects/totebag-logo.svg" alt="Totebag logo"
+                                class="project-card__logo">
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Tote Bag App</h3>
+                            <p class="project-card__description">AI powered shopping app designed to enhance user experience by finding the perfect products that fit best with user needs.</p>
+                            <a href="projects/totebag.html" class="project-card__link">See more <span>→</span></a>
+                        </div>
+                        <div class="project-card__mockup project-card__mockup--yellow">
+                            <span class="project-card__circle project-card__circle--bottom"></span>
+                            <img src="assets/home/side-projects/totebag-mockup.svg" alt="Totebag mockup" loading="lazy">
+                        </div>
+                    </div>
+
+                    <!-- Gigulu Chatbot -->
+                    <div class="project-card project-card--small">
+                        <span class="project-card__circle project-card__circle--top"></span>
+                        <div class="project-card__header">
+                            <img src="assets/home/side-projects/gigulu-logo.svg" alt="Gigulu logo"
+                                class="project-card__logo">
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Gigulu Chatbot</h3>
+                            <p class="project-card__description">A platform which helps freelancers and clients from the creative sector find their next gig or project, or the best talent with an AI assistant.</p>
+                            <a href="projects/gigulu.html" class="project-card__link">See more <span>→</span></a>
+                        </div>
+                        <div class="project-card__mockup project-card__mockup--blue-light">
+                            <span class="project-card__circle project-card__circle--bottom"></span>
+                            <img src="assets/home/side-projects/gigulu-mockup.svg" alt="Gigulu mockup" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__social">
+                <a href="https://linkedin.com" class="footer__social-link" aria-label="LinkedIn" target="_blank"
+                    rel="noopener">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                    </svg>
+                </a>
+                <a href="mailto:hello@melika.com" class="footer__social-link" aria-label="Email">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z" />
+                    </svg>
+                </a>
+            </div>
+            <p class="footer__credit">Created by Melika Mohammadzadeh</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
