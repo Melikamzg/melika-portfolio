@@ -268,12 +268,13 @@ p {
 }
 
 .hero__image {
-    width: 280px;
-    height: 280px;
+    width: 380px;
+    height: 380px;
     border-radius: 50%;
     overflow: hidden;
-    border: 3px solid var(--color-primary);
     background-color: var(--color-bg-accent);
+    position: relative;
+    z-index: 2;
 }
 
 .hero__image img {
@@ -287,26 +288,27 @@ p {
     color: var(--color-primary);
     font-size: 1.25rem;
     font-weight: var(--font-weight-light);
+    z-index: 3;
 }
 
 .hero__decoration--x-left {
-    left: 10%;
-    top: 50%;
-    transform: translateY(-50%);
-    opacity: 0.5;
+    left: 4%;
+    top: 22%;
+    color: var(--color-secondary);
 }
 
 .hero__decoration--x-right {
-    right: 15%;
-    bottom: 25%;
+    right: 4%;
+    bottom: 10%;
 }
 
 .hero__decoration--square {
-    width: 16px;
-    height: 16px;
+    width: 44px;
+    height: 26px;
     background-color: var(--color-primary);
-    left: 45%;
-    bottom: 10%;
+    left: 10%;
+    bottom: 4%;
+    z-index: 1;
 }
 
 .hero__text h1 {
@@ -392,8 +394,8 @@ p {
     }
 
     .hero__image {
-        width: 220px;
-        height: 220px;
+        width: 280px;
+        height: 280px;
     }
 }
 
@@ -703,9 +705,20 @@ p {
 }
 
 .project-card--featured .project-card__mockup img {
-    max-width: 90%;
-    max-height: 85%;
+    max-width: 105%;
+    max-height: 100%;
     object-fit: contain;
+}
+
+/* The featured card's mockup box is much taller than the default (small) cards,
+   so its blob needs its own position/size instead of the bottom-anchored default. */
+.project-card--featured .project-card__mockup::before {
+    top: auto;
+    right: -60px;
+    bottom: -180px;
+    left: auto;
+    width: 480px;
+    height: 480px;
 }
 
 /* Small vertical cards */
@@ -743,11 +756,11 @@ p {
     background-color: #F7F8FD;
 }
 
-.project-card--small:nth-child(2) .project-card__circle--top {
+.project-card--totebag .project-card__circle--top {
     background-color: rgba(255, 249, 196, 0.5);
 }
 
-.project-card--small:nth-child(3) .project-card__circle--top {
+.project-card--gigulu .project-card__circle--top {
     background-color: rgba(227, 242, 253, 0.5);
 }
 
@@ -774,11 +787,31 @@ p {
     object-fit: contain;
 }
 
+/* kutana-logo.svg's own canvas (144x98) is wider than it is tall, unlike floopay-logo.svg's
+   tight 98x98 square, so at a plain 60x60 box object-fit:contain shrinks it to fit the
+   width and letterboxes the height — the circular mark renders ~40px tall instead of 60px.
+   Widening the box to match the asset's own aspect ratio (144:98 at height 60 = ~88 wide)
+   lets the mark fill the full 60px height, same as Floo Pay's logo. */
+.project-card__logo--wide {
+    width: 88px;
+}
+
 .project-card__badge {
-    height: 24px;
-    width: auto;
-    display: flex;
+    display: inline-flex;
     align-items: center;
+    gap: 0.35rem;
+    height: 24px;
+    padding: 0 0.6rem;
+    border-radius: 999px;
+    background-color: var(--color-bg-accent);
+    color: var(--color-primary);
+    font-size: 0.75rem;
+    font-weight: var(--font-weight-regular);
+    white-space: nowrap;
+}
+
+.project-card__badge svg {
+    flex-shrink: 0;
 }
 
 .project-card__content {
@@ -1047,6 +1080,13 @@ p {
     right: 15%;
 }
 
+.case-study__decoration--x3 {
+    top: -10px;
+    left: 65%;
+    color: var(--color-secondary);
+    font-size: 1.1rem;
+}
+
 .case-study__info {
     max-width: 700px;
 }
@@ -1198,6 +1238,18 @@ p {
 
 .ux-research__list li {
     margin-bottom: var(--spacing-xs);
+}
+
+.ux-research__steps {
+    margin: var(--spacing-lg) 0;
+}
+
+.ux-research__steps-img {
+    display: block;
+    width: 100%;
+    max-width: 680px;
+    height: auto;
+    margin: 0 auto;
 }
 
 /* User Interviews Subsection */
@@ -1355,6 +1407,10 @@ p {
     text-align: center;
 }
 
+.affinity-map__image {
+    margin: 0 auto;
+}
+
 /* Affinity Map Grid */
 .affinity-grid {
     display: grid;
@@ -1483,6 +1539,165 @@ p {
         gap: var(--spacing-lg);
     }
 }
+
+/* Persona Profile (Kutana Pay) */
+.persona-profile__title {
+    font-size: clamp(1.5rem, 3vw, 1.75rem);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-lg);
+}
+
+.persona-profile__header {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+}
+
+.persona-profile__photo {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.persona-profile__name {
+    font-size: 1.4rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-xs);
+}
+
+.persona-profile__age {
+    font-size: 0.95rem;
+    color: var(--color-text);
+    margin-bottom: var(--spacing-xs);
+}
+
+.persona-profile__detail {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+    color: var(--color-text);
+    margin-bottom: var(--spacing-xs);
+}
+
+.persona-profile__icon {
+    color: var(--color-primary);
+    flex-shrink: 0;
+    margin-top: 0.15em;
+}
+
+.persona-profile__card {
+    background-color: var(--color-bg-accent);
+    border-radius: 16px;
+    padding: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+}
+
+.persona-profile__card-title {
+    font-size: 1.25rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.persona-profile__card-title:not(:first-child) {
+    margin-top: var(--spacing-lg);
+}
+
+.persona-profile__text {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--color-text);
+}
+
+.persona-profile__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.persona-profile__list li {
+    position: relative;
+    padding-left: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--color-text);
+}
+
+.persona-profile__mark {
+    position: absolute;
+    left: 0;
+    top: 0.05em;
+}
+
+.persona-profile__item-label {
+    display: block;
+    color: var(--color-text);
+}
+
+.persona-profile__item-desc {
+    margin: 0.15rem 0 0;
+}
+
+.persona-profile__mark--x {
+    color: var(--color-primary);
+    font-weight: var(--font-weight-bold);
+}
+
+.persona-profile__helps {
+    border: 2px solid var(--color-secondary);
+    border-radius: 16px;
+    padding: var(--spacing-lg);
+}
+
+.persona-profile__helps-title {
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-secondary);
+    margin-bottom: var(--spacing-md);
+}
+
+.persona-profile__helps-list {
+    list-style: disc;
+    padding-left: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--color-text);
+}
+
+@media (max-width: 576px) {
+    .persona-profile__header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* Persona Profile — Business Owner theme (same teal palette as the Floo Pay blue persona) */
+.persona-profile--business .persona-profile__title {
+    color: #8DA4A6;
+}
+
+.persona-profile--business .persona-profile__name,
+.persona-profile--business .persona-profile__card-title,
+.persona-profile--business .persona-profile__icon {
+    color: #5B8F91;
+}
+
+.persona-profile--business .persona-profile__card {
+    background-color: #EAF2F3;
+}
+
+/* Pain-point X marks and Need checkmarks keep their red/green regardless of persona theme */
 
 /* Persona */
 .persona {
@@ -2345,6 +2560,95 @@ p {
     margin-bottom: var(--spacing-lg);
     font-style: italic;
     /* Matches "Typography" and "Colour pallet" headers */
+}
+
+.design-system__subsection {
+    margin-bottom: var(--spacing-xl);
+}
+
+/* Type Scale Showcase (Kutana Pay) */
+.type-scale {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.type-scale__group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.type-scale__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: baseline;
+    gap: var(--spacing-md);
+}
+
+.type-scale__label,
+.type-scale__spec {
+    color: var(--color-secondary);
+    line-height: 1.2;
+}
+
+.type-scale--h1 {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.type-scale--h2 {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.type-scale--h3 {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.type-scale--h4 {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.type-scale--p1 {
+    font-weight: var(--font-weight-regular);
+    font-size: 18px;
+}
+
+.type-scale--p2 {
+    font-weight: var(--font-weight-regular);
+    font-size: 16px;
+}
+
+.type-scale--p3 {
+    font-weight: var(--font-weight-regular);
+    font-size: 14px;
+}
+
+.type-scale--btn {
+    font-weight: 800;
+    font-size: 14px;
+}
+
+.ds-btn-label {
+    display: block;
+    font-style: italic;
+    font-size: 0.85rem;
+    color: var(--color-secondary);
+    opacity: 0.75;
+    margin-bottom: 0.25rem;
+}
+
+.ds-component-wrapper.ds-component-wrapper--stack {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
 }
 
 /* Typography Showcase */

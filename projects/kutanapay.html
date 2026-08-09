@@ -18,7 +18,8 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Lato:wght@300;400;700;800&display=swap"
+        rel="stylesheet">
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="../css/reset.css">
@@ -52,78 +53,881 @@
         <!-- Hero Section -->
         <section class="case-study__hero">
             <div class="container">
-                <h1>Kutanapay</h1>
-                <p>Comprehensive payment solution for businesses</p>
-                <div class="case-study__meta">
-                    <div class="case-study__meta-item">
-                        <span class="case-study__meta-label">Role</span>
-                        <span>UI/UX Designer</span>
+                <div class="case-study__header">
+                    <h1>Kutana Pay</h1>
+                    <p class="case-study__tags">
+                        <a href="#ux-research" class="case-study__tag-link">UX Research</a> |
+                        <a href="#ux-design" class="case-study__tag-link">UX Design</a> |
+                        <a href="#key-takeaways" class="case-study__tag-link">Key Takeaways</a>
+                    </p>
+                </div>
+
+                <div class="case-study__mockup-wrapper">
+                    <div class="case-study__mockup-bg"></div>
+                    <img src="../assets/kutanapay/kutanapay-screens.svg" alt="Kutana Pay wallet and payment screens shown on a laptop"
+                        class="case-study__mockup-img" loading="lazy">
+                    <span class="case-study__decoration case-study__decoration--x1">✕</span>
+                    <span class="case-study__decoration case-study__decoration--x2">✕</span>
+                    <span class="case-study__decoration case-study__decoration--x3">✕</span>
+                </div>
+
+                <div class="case-study__info">
+                    <p class="case-study__overview"><strong>Overview:</strong> A digital financial management platform
+                        designed to help users track their income, expenses, transactions, and wallets while offering
+                        currency conversion services.</p>
+                    <p class="case-study__detail"><strong>Role:</strong> UX Researcher, UX/UI designer</p>
+                    <p class="case-study__detail"><strong>Toolkit:</strong> Figma, FigJam, Notability, ConfigCat</p>
+                    <a href="https://app.kutanapay.com/signup" class="btn btn--outline case-study__cta" target="_blank" rel="noopener">See it live</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- UX Research Section -->
+        <section id="ux-research" class="case-study__section case-study__ux-research">
+            <div class="container">
+                <h2 class="case-study__section-title case-study__section-title--red">UX Research</h2>
+                <hr class="case-study__divider">
+
+                <div class="ux-research__content">
+                    <div class="ux-research__block">
+                        <h3 class="ux-research__heading">• Background:</h3>
+                        <p class="ux-research__text">To enable Freelancers and SMEs trade securely there was a need
+                            for the platform to be redesigned to a more seamless experience to manage their finance.
+                            The redesign aimed to accommodate updated features and bring a user-friendly experience
+                            with the platform, putting users as centres of the study.</p>
                     </div>
-                    <div class="case-study__meta-item">
-                        <span class="case-study__meta-label">Duration</span>
-                        <span>6 months</span>
+
+                    <div class="ux-research__goal-card">
+                        <h3 class="ux-research__goal-title">• Research Goal:</h3>
+                        <p class="ux-research__goal-text">Identify <strong>persona types</strong>, understand the
+                            <strong>pain points and needs of users managing multiple currencies and
+                                transactions</strong> to redesign the platform to acomplish <strong>enhanced control
+                                over personal and business finances.</strong></p>
                     </div>
-                    <div class="case-study__meta-item">
-                        <span class="case-study__meta-label">Year</span>
-                        <span>2024</span>
+
+                    <div class="ux-research__block">
+                        <h3 class="ux-research__heading">• Methodologies:</h3>
+                        <ol class="ux-research__list">
+                            <li>Contextual Inquiry</li>
+                            <li>Usability Testing</li>
+                            <li>Validation with PostHog</li>
+                        </ol>
+                    </div>
+
+                    <!-- User Interviews Subsection -->
+                    <div class="ux-research__subsection">
+                        <h3 class="ux-research__subtitle">User Interviews</h3>
+
+                        <div class="ux-research__block">
+                            <h4 class="ux-research__heading">• Overview:</h4>
+                            <p class="ux-research__text">Semi-structured qualitative interviews via MS Teams with 8
+                                participants (Freelancers, Business Owners) as primary users of the platform.</p>
+                        </div>
+
+                        <div class="ux-research__steps">
+                            <img src="../assets/kutanapay/ux-steps.svg"
+                                alt="Four-step research process: task moderation with think-aloud interviews, defining challenges for two persona types, ideating design solutions and wireframes, and A/B testing with feature flags on ConfigCat"
+                                class="ux-research__steps-img" loading="lazy">
+                        </div>
+
+                        <div class="ux-research__block">
+                            <h4 class="ux-research__heading">• Contextual Inquiry:</h4>
+                            <p class="ux-research__text">By watching the users and listening as they explain their
+                                usual tasks using the platform, I pieced together a more holistic understanding of the
+                                problem to ultimately create a larger solution space to solve the pain points of the
+                                users.</p>
+                        </div>
+                    </div>
+
+                    <!-- Research Findings Subsection -->
+                    <div class="ux-research__subsection">
+                        <h3 class="ux-research__subtitle">Research Findings</h3>
+
+                        <div class="findings-grid">
+                            <div class="finding-card">
+                                <img src="../assets/kutanapay/icon/currency-icon.svg" alt="Currency icon"
+                                    class="finding-card__icon">
+                                <h4 class="finding-card__title">Unclear conversion and transaction fees</h4>
+                                <p class="finding-card__text">Need for transparency when it comes to fees.</p>
+                            </div>
+
+                            <div class="finding-card">
+                                <img src="../assets/kutanapay/icon/expenses-icon.svg" alt="Expenses icon"
+                                    class="finding-card__icon">
+                                <h4 class="finding-card__title">Confusion with tracking financial activity per
+                                    currency</h4>
+                                <p class="finding-card__text">A multi-wallet system is crucial.</p>
+                            </div>
+
+                            <div class="finding-card">
+                                <img src="../assets/kutanapay/icon/filter-icon.svg" alt="Filter icon"
+                                    class="finding-card__icon">
+                                <h4 class="finding-card__title">Transaction History Needs Better Filters & Search</h4>
+                                <p class="finding-card__text">Users struggle to find past transactions.</p>
+                            </div>
+
+                            <div class="finding-card">
+                                <img src="../assets/kutanapay/icon/hide-icon.svg" alt="Hidden fees icon"
+                                    class="finding-card__icon">
+                                <h4 class="finding-card__title">High Fees and Hidden Charges are a Concern</h4>
+                                <p class="finding-card__text">A fee transparency breakdown is necessary.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Freelancer Persona #1 Subsection -->
+                    <div class="ux-research__subsection persona-profile">
+                        <h3 class="persona-profile__title">Freelancer Persona #1</h3>
+
+                        <div class="persona-profile__header">
+                            <img src="../assets/kutanapay/persona-1.svg" alt="Nia Bassey" class="persona-profile__photo">
+                            <div class="persona-profile__info">
+                                <h4 class="persona-profile__name">Nia Bassey</h4>
+                                <p class="persona-profile__age">27 y/o</p>
+                                <p class="persona-profile__detail">
+                                    <svg class="persona-profile__icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                        <path d="M10 2a2 2 0 00-2 2v1H4a2 2 0 00-2 2v3h20V7a2 2 0 00-2-2h-4V4a2 2 0 00-2-2h-4zm0 2h4v1h-4V4zM2 11v7a2 2 0 002 2h16a2 2 0 002-2v-7H2z" />
+                                    </svg>
+                                    Freelance UX Designer
+                                </p>
+                                <p class="persona-profile__detail">
+                                    <svg class="persona-profile__icon" width="16" height="16" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M9.69 18.933l.003.001C9.89 19.02 10 19 10 19s.11.02.308-.066l.002-.001.006-.003.018-.008a5.741 5.741 0 00.281-.14c.186-.096.446-.24.757-.433.62-.384 1.445-.966 2.274-1.765C15.302 14.988 17 12.493 17 9A7 7 0 103 9c0 3.492 1.698 5.988 3.355 7.584a13.31 13.31 0 002.273 1.765 9.4 9.4 0 00.759.433 5.741 5.741 0 00.281.14l.018.008.006.003zM10 11.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    Accra, Ghana
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="persona-profile__card">
+                            <h4 class="persona-profile__card-title">Biography</h4>
+                            <p class="persona-profile__text">Nia is a talented designer working full-time as a
+                                freelancer on TalentNest, collaborating with clients in the US and Europe. She’s
+                                passionate about design, dependable with deadlines, and sees freelancing as a way to
+                                create a life of flexibility and independence. Her biggest concern: getting paid
+                                quickly and fairly without jumping through financial hoops or losing a big chunk to
+                                fees.</p>
+
+                            <h4 class="persona-profile__card-title">Pain points</h4>
+                            <ul class="persona-profile__list persona-profile__list--pain">
+                                <li><span class="persona-profile__mark persona-profile__mark--x">✕</span><strong>Long
+                                        payment delays</strong> after completing projects</li>
+                                <li><span class="persona-profile__mark persona-profile__mark--x">✕</span><strong>Hidden
+                                        fees and bad exchange rates</strong>, reducing her earnings</li>
+                                <li><span class="persona-profile__mark persona-profile__mark--x">✕</span>Difficulty
+                                    <strong>receiving international payments</strong> in Ghana via traditional
+                                    platforms</li>
+                                <li><span class="persona-profile__mark persona-profile__mark--x">✕</span>No way to
+                                    <strong>withdraw to mobile money or in local currency</strong> directly</li>
+                                <li><span class="persona-profile__mark persona-profile__mark--x">✕</span>Anxiety around
+                                    <strong>payment disputes</strong> or being ghosted by clients</li>
+                            </ul>
+
+                            <h4 class="persona-profile__card-title">Needs</h4>
+                            <ul class="persona-profile__list persona-profile__list--needs">
+                                <li><span
+                                        class="persona-profile__mark persona-profile__mark--check">✅</span><strong>Fast
+                                        payouts</strong> after completing milestones</li>
+                                <li><span class="persona-profile__mark persona-profile__mark--check">✅</span>Payments
+                                    that <strong>land in GHS or can be held in USD</strong> securely</li>
+                                <li><span class="persona-profile__mark persona-profile__mark--check">✅</span>Low fees
+                                    and <strong>transparent conversion rates</strong></li>
+                                <li><span class="persona-profile__mark persona-profile__mark--check">✅</span>A
+                                    platform that <strong>guarantees she’ll get paid</strong> once her work is done
+                                </li>
+                                <li><span class="persona-profile__mark persona-profile__mark--check">✅</span>Simple
+                                    tools to <strong>track, withdraw, and manage</strong> her freelance income</li>
+                            </ul>
+                        </div>
+
+                        <div class="persona-profile__helps">
+                            <h4 class="persona-profile__helps-title">How Kutana Pay helps?</h4>
+                            <ul class="persona-profile__helps-list">
+                                <li><strong>Instant or same-day payouts</strong> directly to her mobile money or local
+                                    bank account</li>
+                                <li>Option to <strong>hold funds in USD or GHS</strong>, and withdraw when it’s best
+                                    for her</li>
+                                <li><strong>Low, transparent transaction fees</strong> = more money in her pocket</li>
+                                <li><strong>Digital escrow protection</strong> ensures she’s paid for every completed
+                                    job</li>
+                                <li>Easy-to-use wallet and transaction dashboard — no more guessing or waiting</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Freelancer Persona #2 Subsection -->
+                    <div class="ux-research__subsection persona-profile">
+                        <h3 class="persona-profile__title">Freelancer Persona #2</h3>
+
+                        <div class="persona-profile__header">
+                            <img src="../assets/kutanapay/persona-2.svg" alt="Omar Al-Farsi" class="persona-profile__photo">
+                            <div class="persona-profile__info">
+                                <h4 class="persona-profile__name">Omar Al-Farsi</h4>
+                                <p class="persona-profile__age">26 y/o</p>
+                                <p class="persona-profile__detail">
+                                    <svg class="persona-profile__icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                        <path d="M10 2a2 2 0 00-2 2v1H4a2 2 0 00-2 2v3h20V7a2 2 0 00-2-2h-4V4a2 2 0 00-2-2h-4zm0 2h4v1h-4V4zM2 11v7a2 2 0 002 2h16a2 2 0 002-2v-7H2z" />
+                                    </svg>
+                                    Graphic Designer
+                                </p>
+                                <p class="persona-profile__detail">
+                                    <svg class="persona-profile__icon" width="16" height="16" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M9.69 18.933l.003.001C9.89 19.02 10 19 10 19s.11.02.308-.066l.002-.001.006-.003.018-.008a5.741 5.741 0 00.281-.14c.186-.096.446-.24.757-.433.62-.384 1.445-.966 2.274-1.765C15.302 14.988 17 12.493 17 9A7 7 0 103 9c0 3.492 1.698 5.988 3.355 7.584a13.31 13.31 0 002.273 1.765 9.4 9.4 0 00.759.433 5.741 5.741 0 00.281.14l.018.008.006.003zM10 11.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    Amman, Jordan
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="persona-profile__card">
+                            <h4 class="persona-profile__card-title">Biography</h4>
+                            <p class="persona-profile__text">Omar Al-Farsi is a 26-year-old graphic designer from
+                                Sana'a, Yemen. He relocated to Amman, Jordan, seeking better opportunities and
+                                connected with Change Makers. Through their training programs, Omar enhanced his
+                                design skills and secured freelance projects with international clients. Despite his
+                                success, he faces challenges in receiving and managing payments and financial
+                                transactions across borders</p>
+
+                            <h4 class="persona-profile__card-title">Pain points</h4>
+                            <ul class="persona-profile__list persona-profile__list--pain">
+                                <li><span class="persona-profile__mark persona-profile__mark--x">✕</span><strong>Delayed
+                                        Payments:</strong> Receiving payments from international clients is often
+                                    slow, affecting cash flow and financial planning.</li>
+                                <li><span class="persona-profile__mark persona-profile__mark--x">✕</span><strong>High
+                                        Transfer Fees:</strong> Traditional money transfer services impose substantial
+                                    fees, reducing the overall income from projects.</li>
+                                <li><span class="persona-profile__mark persona-profile__mark--x">✕</span><strong>Financial
+                                        Uncertainty:</strong> Fluctuating exchange rates and unpredictable transfer
+                                    times create financial instability and complicate budgeting.</li>
+                            </ul>
+
+                            <h4 class="persona-profile__card-title">Needs</h4>
+                            <ul class="persona-profile__list persona-profile__list--needs">
+                                <li><span
+                                        class="persona-profile__mark persona-profile__mark--check">✅</span><strong>Timely
+                                        Payment Processing:</strong> A reliable system that ensures prompt receipt of
+                                    earnings upon project completion.</li>
+                                <li><span
+                                        class="persona-profile__mark persona-profile__mark--check">✅</span><strong>Affordable
+                                        Transfer Options:</strong> Low-cost methods for transferring funds
+                                    internationally to maximize earnings.</li>
+                                <li><span
+                                        class="persona-profile__mark persona-profile__mark--check">✅</span><strong>Financial
+                                        Predictability:</strong> Stable exchange rates and transparent transaction
+                                    processes to facilitate accurate financial planning.</li>
+                            </ul>
+                        </div>
+
+                        <div class="persona-profile__helps">
+                            <h4 class="persona-profile__helps-title">How Kutana Pay helps?</h4>
+                            <ul class="persona-profile__helps-list">
+                                <li><strong>Fast Payment Settlements:</strong> Kutana Pay's platform ensures quick
+                                    processing of payments, allowing freelancers like Omar to access their earnings
+                                    without unnecessary delays.</li>
+                                <li><strong>Low-Cost Transfers:</strong> By utilizing digital wallets and blockchain
+                                    technology, Kutana Pay offers affordable international transfer options,
+                                    preserving more of the freelancer's income.</li>
+                                <li><strong>Stable Financial Transactions:</strong> With clear exchange rates and fast
+                                    transaction times, Kutana Pay provides a stable financial environment, aiding
+                                    freelancers in effective budgeting and financial management.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Business Owner Persona #1 Subsection -->
+                    <div class="ux-research__subsection persona-profile persona-profile--business">
+                        <h3 class="persona-profile__title">Business Owner Persona #1</h3>
+
+                        <div class="persona-profile__header">
+                            <img src="../assets/kutanapay/persona-3.svg" alt="Lebo Mokoena" class="persona-profile__photo">
+                            <div class="persona-profile__info">
+                                <h4 class="persona-profile__name">Lebo Mokoena</h4>
+                                <p class="persona-profile__age">34 y/o</p>
+                                <p class="persona-profile__detail">
+                                    <svg class="persona-profile__icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                        <path d="M10 2a2 2 0 00-2 2v1H4a2 2 0 00-2 2v3h20V7a2 2 0 00-2-2h-4V4a2 2 0 00-2-2h-4zm0 2h4v1h-4V4zM2 11v7a2 2 0 002 2h16a2 2 0 002-2v-7H2z" />
+                                    </svg>
+                                    Chief Operating Officer
+                                </p>
+                                <p class="persona-profile__detail">
+                                    <svg class="persona-profile__icon" width="16" height="16" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M9.69 18.933l.003.001C9.89 19.02 10 19 10 19s.11.02.308-.066l.002-.001.006-.003.018-.008a5.741 5.741 0 00.281-.14c.186-.096.446-.24.757-.433.62-.384 1.445-.966 2.274-1.765C15.302 14.988 17 12.493 17 9A7 7 0 103 9c0 3.492 1.698 5.988 3.355 7.584a13.31 13.31 0 002.273 1.765 9.4 9.4 0 00.759.433 5.741 5.741 0 00.281.14l.018.008.006.003zM10 11.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    Nairobi, Kenya
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="persona-profile__card">
+                            <h4 class="persona-profile__card-title">Biography</h4>
+                            <p class="persona-profile__text">Lebo is the co-founder and operations lead at TalentNest,
+                                a platform that connects Africa's top freelance professionals with global clients. She
+                                manages the operations team, oversees freelancer onboarding, ensures project delivery
+                                standards, and most critically, handles payments between clients and freelancers. With
+                                rapid growth and freelancers in over 10 African countries, she's always looking for a
+                                more efficient, affordable, and trustworthy way to move money across borders.</p>
+
+                            <h4 class="persona-profile__card-title">Pain points</h4>
+                            <ul class="persona-profile__list persona-profile__list--pain">
+                                <li><span class="persona-profile__mark persona-profile__mark--x">✕</span><strong>Delays
+                                        and inconsistencies</strong> in paying freelancers across Africa</li>
+                                <li><span class="persona-profile__mark persona-profile__mark--x">✕</span><strong>High
+                                        banking fees and exchange losses,</strong> eating into platform margins and
+                                    freelancer earnings</li>
+                                <li><span class="persona-profile__mark persona-profile__mark--x">✕</span>Too many
+                                    <strong>payment providers</strong> with inconsistent reach and expensive
+                                    integrations</li>
+                                <li><span class="persona-profile__mark persona-profile__mark--x">✕</span><strong>Trust
+                                        management</strong> is manual — they handle funds but lack a scalable escrow
+                                    solution</li>
+                                <li><span class="persona-profile__mark persona-profile__mark--x">✕</span>Limited
+                                    ability to support <strong>mobile money or local currency payouts</strong>
+                                    natively</li>
+                            </ul>
+
+                            <h4 class="persona-profile__card-title">Needs</h4>
+                            <ul class="persona-profile__list persona-profile__list--needs">
+                                <li><span class="persona-profile__mark persona-profile__mark--check">✅</span>A
+                                    <strong>unified payment system</strong> that works across Africa and globally</li>
+                                <li><span class="persona-profile__mark persona-profile__mark--check">✅</span>Fast,
+                                    <strong>low-cost cross-border payments</strong> with support for local currencies
+                                </li>
+                                <li><span class="persona-profile__mark persona-profile__mark--check">✅</span>A
+                                    <strong>built-in digital escrow</strong> feature for trust and milestone-based
+                                    work</li>
+                                <li><span
+                                        class="persona-profile__mark persona-profile__mark--check">✅</span><strong>Easy
+                                        tracking and reporting</strong> on all payouts for accounting and freelancer
+                                    communication</li>
+                                <li><span class="persona-profile__mark persona-profile__mark--check">✅</span>Support
+                                    for <strong>various payout methods</strong> (bank, card, wallet) without
+                                    complexity</li>
+                            </ul>
+                        </div>
+
+                        <div class="persona-profile__helps">
+                            <h4 class="persona-profile__helps-title">How Kutana Pay helps?</h4>
+                            <ul class="persona-profile__helps-list">
+                                <li><strong>Fast, reliable global transactions</strong> — freelancers are paid as soon
+                                    as work is approved</li>
+                                <li><strong>Flat 1.5% fee</strong> helps TalentNest preserve margins and increase
+                                    freelancer satisfaction</li>
+                                <li><strong>Multi-currency wallets</strong> for both international (USD, EUR) and
+                                    African currencies</li>
+                                <li><strong>Built-in escrow functionality</strong> ensures payment security and builds
+                                    trust between freelancers and clients</li>
+                                <li><strong>All-in-one dashboard</strong> to manage payouts, currencies, and payment
+                                    status across multiple countries</li>
+                                <li>Supports <strong>mobile money and local banks</strong>, meeting freelancers where
+                                    they are</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Business Owner Persona #2 Subsection -->
+                    <div class="ux-research__subsection persona-profile persona-profile--business">
+                        <h3 class="persona-profile__title">Business Owner Persona #2</h3>
+
+                        <div class="persona-profile__header">
+                            <img src="../assets/kutanapay/persona-4.svg" alt="Jean-Michel Lefevre" class="persona-profile__photo">
+                            <div class="persona-profile__info">
+                                <h4 class="persona-profile__name">Jean-Michel Lefevre</h4>
+                                <p class="persona-profile__age">38 y/o</p>
+                                <p class="persona-profile__detail">
+                                    <svg class="persona-profile__icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                        <path d="M10 2a2 2 0 00-2 2v1H4a2 2 0 00-2 2v3h20V7a2 2 0 00-2-2h-4V4a2 2 0 00-2-2h-4zm0 2h4v1h-4V4zM2 11v7a2 2 0 002 2h16a2 2 0 002-2v-7H2z" />
+                                    </svg>
+                                    Charter Sales & Client Services Manager
+                                </p>
+                                <p class="persona-profile__detail">
+                                    <svg class="persona-profile__icon" width="16" height="16" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M9.69 18.933l.003.001C9.89 19.02 10 19 10 19s.11.02.308-.066l.002-.001.006-.003.018-.008a5.741 5.741 0 00.281-.14c.186-.096.446-.24.757-.433.62-.384 1.445-.966 2.274-1.765C15.302 14.988 17 12.493 17 9A7 7 0 103 9c0 3.492 1.698 5.988 3.355 7.584a13.31 13.31 0 002.273 1.765 9.4 9.4 0 00.759.433 5.741 5.741 0 00.281.14l.018.008.006.003zM10 11.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    Nice, France (with regular travel to London and Dubai)
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="persona-profile__card">
+                            <h4 class="persona-profile__card-title">Biography</h4>
+                            <p class="persona-profile__text">Jean-Michel Lefevre, 38, is the Charter Sales & Client
+                                Services Manager at Farringdon Jets, based in Nice, France. He handles high-value
+                                bookings across Europe, the Middle East, and Africa, often under tight deadlines. His
+                                main challenges are delayed payments, currency issues, and lack of real-time payment
+                                tracking. Kutana Pay helps him confirm bookings faster with low-fee, multi-currency
+                                transfers and instant payment visibility.</p>
+
+                            <h4 class="persona-profile__card-title">Pain points</h4>
+                            <ul class="persona-profile__list persona-profile__list--pain">
+                                <li>
+                                    <span class="persona-profile__mark persona-profile__mark--x">✕</span>
+                                    <strong class="persona-profile__item-label">Client Payments Delay Flight
+                                        Confirmations:</strong>
+                                    <p class="persona-profile__item-desc">Jean-Michel often needs client payments
+                                        confirmed quickly to secure aircraft availability, but traditional payment
+                                        methods are slow, especially for last-minute bookings involving African or
+                                        Gulf region banks.</p>
+                                </li>
+                                <li>
+                                    <span class="persona-profile__mark persona-profile__mark--x">✕</span>
+                                    <strong class="persona-profile__item-label">FX and Cross-Border Confusion:</strong>
+                                    <p class="persona-profile__item-desc">Clients might pay in AED, EUR, or USD, but
+                                        local service providers require payments in local African currencies.
+                                        Currency mismatches and poor exchange rates cause confusion and even payment
+                                        rejections.</p>
+                                </li>
+                                <li>
+                                    <span class="persona-profile__mark persona-profile__mark--x">✕</span>
+                                    <strong class="persona-profile__item-label">Lack of Visibility for International
+                                        Transfers:</strong>
+                                    <p class="persona-profile__item-desc">When a client says they've paid, Jean-Michel
+                                        has no real-time visibility into whether the funds have arrived, causing
+                                        delays in approvals and undermining client trust.</p>
+                                </li>
+                                <li>
+                                    <span class="persona-profile__mark persona-profile__mark--x">✕</span>
+                                    <strong class="persona-profile__item-label">High Fees Impact Budget-Sensitive
+                                        Flights:</strong>
+                                    <p class="persona-profile__item-desc">Some bookings are price-sensitive, and
+                                        Jean-Michel struggles to keep costs down when bank fees and FX margins inflate
+                                        transfer amounts — especially when working with clients paying from multiple
+                                        jurisdictions.</p>
+                                </li>
+                            </ul>
+
+                            <h4 class="persona-profile__card-title">Needs</h4>
+                            <ul class="persona-profile__list persona-profile__list--needs">
+                                <li>
+                                    <span class="persona-profile__mark persona-profile__mark--check">✅</span>
+                                    <strong class="persona-profile__item-label">Fast Payment Confirmation:</strong>
+                                    <p class="persona-profile__item-desc">A way to <strong>instantly see when a
+                                            payment is received</strong> so flights can be confirmed without delay.
+                                    </p>
+                                </li>
+                                <li>
+                                    <span class="persona-profile__mark persona-profile__mark--check">✅</span>
+                                    <strong class="persona-profile__item-label">Multi-Currency Support with Fair FX
+                                        Rates:</strong>
+                                    <p class="persona-profile__item-desc">The ability to <strong>accept and send
+                                            funds across multiple currencies seamlessly</strong>, without losing money
+                                        to poor exchange rates or needing multiple bank accounts.</p>
+                                </li>
+                                <li>
+                                    <span class="persona-profile__mark persona-profile__mark--check">✅</span>
+                                    <strong class="persona-profile__item-label">Client-Friendly Payment
+                                        Options:</strong>
+                                    <p class="persona-profile__item-desc">A smooth, intuitive way for clients to
+                                        <strong>send money securely and quickly</strong>, even when booking last
+                                        minute.</p>
+                                </li>
+                                <li>
+                                    <span class="persona-profile__mark persona-profile__mark--check">✅</span>
+                                    <strong class="persona-profile__item-label">Transparent Fees and Real-Time
+                                        Tracking:</strong>
+                                    <p class="persona-profile__item-desc">Full clarity into what was charged, how much
+                                        reached the recipient, and where a transfer is at any moment.</p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="persona-profile__helps">
+                            <h4 class="persona-profile__helps-title">How Kutana Pay helps?</h4>
+                            <ul class="persona-profile__helps-list">
+                                <li><strong>Instant Payment Visibility:</strong> Kutana Pay gives Jean-Michel
+                                    real-time payment updates, allowing him to confirm bookings faster and reassure
+                                    clients that everything is on track.</li>
+                                <li><strong>Cross-Border Currency Flexibility:</strong> With Kutana's multi-currency
+                                    wallets and fair FX rates, he can manage international payments with ease and
+                                    ensure local partners are paid in the correct currency without hidden losses.</li>
+                                <li><strong>Client-Friendly Interface:</strong> Kutana's payment system is
+                                    <strong>simple and intuitive</strong> for clients, making it easy for them to send
+                                    deposits even on tight timelines — especially important in VIP charter services.
+                                </li>
+                                <li><strong>Low Fees and Full Transparency:</strong> Jean-Michel can quote clients
+                                    confidently, knowing there won't be any surprise charges or payment delays,
+                                    helping him deliver smoother, trust-based service.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- UX Design Section -->
+        <section id="ux-design" class="case-study__section case-study__ux-design">
+            <div class="container">
+                <h2 class="case-study__section-title--red">UX Design</h2>
+                <div class="case-study__divider"></div>
+
+                <div class="ux-design__content">
+                    <div class="ux-design__block">
+                        <h3 class="ux-design__subtitle">Prioritization</h3>
+                        <div class="ux-design__subblock">
+                            <h4 class="ux-design__heading">• Project Goals:</h4>
+                            <p class="ux-design__text">While Business goals were mainly focused in gaining as much
+                                customers as possible by making clear how the platform works, I had a deeper vision of
+                                what users wanted and I was able to identify where the two of them aligned.</p>
+                        </div>
+                    </div>
+
+                    <div class="ux-design__venn-section">
+                        <div class="affinity-map" id="vennDiagramContainer">
+                            <img src="../assets/kutanapay/venn-diagram.svg"
+                                alt="Prioritization Venn Diagram - Business goals, Project goals, and User goals"
+                                class="affinity-map__image" id="vennDiagramImage">
+                            <button class="affinity-map__magnify" onclick="openFullscreen('vennDiagramContainer')">
+                                MAGNIFY
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <circle cx="11" cy="11" r="8"></circle>
+                                    <path d="M21 21l-4.35-4.35"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="ux-design__block" style="margin-top: var(--spacing-xxl);">
+                        <h3 class="ux-design__subtitle">Wireframes</h3>
+                        <div class="ux-design__subblock">
+                            <p class="ux-design__text">According to the project goals, I sketched the main pages for
+                                dashboard, wallets, covert, transactions, notifications and recipients. Considering
+                                the goals of the main personas, the end user should be able to complete their task
+                                flows in the 6 menu items.</p>
+                        </div>
+                    </div>
+
+                    <div class="ux-design__image-section">
+                        <div class="affinity-map" id="wireframesContainer">
+                            <img src="../assets/kutanapay/wireframes.svg"
+                                alt="Wireframe sketches for dashboard, transactions, and convert screens"
+                                class="affinity-map__image" id="wireframesImage">
+                            <button class="affinity-map__magnify" onclick="openFullscreen('wireframesContainer')">
+                                MAGNIFY
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <circle cx="11" cy="11" r="8"></circle>
+                                    <path d="M21 21l-4.35-4.35"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="ux-design__block" style="margin-top: var(--spacing-xxl);">
+                        <h3 class="ux-design__subtitle">User flows</h3>
+                        <div class="ux-design__subblock">
+                            <p class="ux-design__text">I then identified the main user flows such as signing up,
+                                completing KYC/KYB forms, getting support, making a deposit, withdrawal, and
+                                conversion per different wallet respecting different compliant requirements.</p>
+                        </div>
+                    </div>
+
+                    <div class="ux-design__image-section">
+                        <div class="affinity-map" id="userFlowContainer">
+                            <img src="../assets/kutanapay/user-flow.svg"
+                                alt="User flow diagram for depositing funds via bank, mobile money, or M-Pesa, through to wallet crediting"
+                                class="affinity-map__image" id="userFlowImage">
+                            <button class="affinity-map__magnify" onclick="openFullscreen('userFlowContainer')">
+                                MAGNIFY
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <circle cx="11" cy="11" r="8"></circle>
+                                    <path d="M21 21l-4.35-4.35"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="ux-design__block" style="margin-top: var(--spacing-xxl);">
+                        <h3 class="ux-design__subtitle">Design system</h3>
+                        <div class="ux-design__subblock">
+                            <p class="design-system__intro">I have created a design system with primary and
+                                secondary colours as well as neutral ones. As for <strong>Typography</strong>, I
+                                decided to go with DM Sans (for H) and Lato (for P) to have better legibility.</p>
+
+                            <div class="design-system__main-grid">
+                                <!-- Left Column: Typography and Components -->
+                                <div class="design-system__left-col">
+                                    <div class="design-system__subsection">
+                                        <h4 class="design-system__subtitle">Typography</h4>
+                                        <div class="type-scale">
+                                            <div class="type-scale__group">
+                                                <div class="type-scale__row">
+                                                    <span class="type-scale__label type-scale--h1">Heading 1</span>
+                                                    <span class="type-scale__spec type-scale--h1">DM Sans Bold 48
+                                                        px</span>
+                                                </div>
+                                                <div class="type-scale__row">
+                                                    <span class="type-scale__label type-scale--h2">Heading 2</span>
+                                                    <span class="type-scale__spec type-scale--h2">DM Sans Bold 30
+                                                        px</span>
+                                                </div>
+                                                <div class="type-scale__row">
+                                                    <span class="type-scale__label type-scale--h3">Heading 3</span>
+                                                    <span class="type-scale__spec type-scale--h3">DM Sans Bold 24
+                                                        px</span>
+                                                </div>
+                                                <div class="type-scale__row">
+                                                    <span class="type-scale__label type-scale--h4">Heading 4</span>
+                                                    <span class="type-scale__spec type-scale--h4">DM Sans Bold 20
+                                                        px</span>
+                                                </div>
+                                            </div>
+                                            <div class="type-scale__group">
+                                                <div class="type-scale__row">
+                                                    <span class="type-scale__label type-scale--p1">Paragraph 1</span>
+                                                    <span class="type-scale__spec type-scale--p1">Lato Regular 18
+                                                        px</span>
+                                                </div>
+                                                <div class="type-scale__row">
+                                                    <span class="type-scale__label type-scale--p2">Paragraph 2</span>
+                                                    <span class="type-scale__spec type-scale--p2">Lato Regular 16
+                                                        px</span>
+                                                </div>
+                                                <div class="type-scale__row">
+                                                    <span class="type-scale__label type-scale--p3">Paragraph 3</span>
+                                                    <span class="type-scale__spec type-scale--p3">Lato Regular 14
+                                                        px</span>
+                                                </div>
+                                                <div class="type-scale__row">
+                                                    <span class="type-scale__label type-scale--btn">Button
+                                                        text</span>
+                                                    <span class="type-scale__spec type-scale--btn">Lato Extra Bold 14
+                                                        px</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="design-system__subsection">
+                                        <h4 class="design-system__subtitle">Alerts</h4>
+                                        <div class="ds-component-wrapper ds-component-wrapper--stack">
+                                            <img src="../assets/kutanapay/info-strip.svg"
+                                                alt="Info alert: Create a wallet first to be able to pay someone!"
+                                                class="ds-asset-img" style="max-width: 370px;">
+                                            <img src="../assets/kutanapay/confirm-strip.svg"
+                                                alt="Success alert: Your USD wallet is successfully created!"
+                                                class="ds-asset-img" style="max-width: 330px;">
+                                        </div>
+                                    </div>
+
+                                    <div class="design-system__subsection">
+                                        <h4 class="design-system__subtitle">Wallet cards</h4>
+                                        <div class="ds-component-wrapper">
+                                            <img src="../assets/kutanapay/wallet-component.svg"
+                                                alt="Wallet balance card showing £6000 GBP" class="ds-asset-img"
+                                                style="max-width: 320px;">
+                                        </div>
+                                    </div>
+
+                                    <div class="design-system__subsection">
+                                        <h4 class="design-system__subtitle">Buttons</h4>
+                                        <div class="component-svg--buttons">
+                                            <span class="ds-btn-label">#Primary</span>
+                                            <div class="ds-btn-row">
+                                                <img src="../assets/kutanapay/buttons-primary.svg"
+                                                    alt="Primary buttons: Pay, Continue, Done"
+                                                    class="ds-asset-img btn-asset" style="max-width: 350px;">
+                                            </div>
+                                            <span class="ds-btn-label">#Secondary</span>
+                                            <div class="ds-btn-row">
+                                                <img src="../assets/kutanapay/buttons-secondary.svg"
+                                                    alt="Secondary buttons: Withdraw, Deposit, Convert"
+                                                    class="ds-asset-img btn-asset" style="max-width: 305px;">
+                                            </div>
+                                            <span class="ds-btn-label">#Tertiary</span>
+                                            <div class="ds-btn-row">
+                                                <img src="../assets/kutanapay/button-tertiary.svg"
+                                                    alt="Tertiary button: Get Support" class="ds-asset-img btn-asset"
+                                                    style="max-width: 80px;">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="design-system__subsection">
+                                        <h4 class="design-system__subtitle">Forms</h4>
+                                        <div class="ds-component-wrapper">
+                                            <img src="../assets/kutanapay/form-asset.svg"
+                                                alt="Withdraw details form with bank account fields"
+                                                class="ds-asset-img" style="max-width: 420px;">
+                                        </div>
+                                    </div>
+
+                                    <div class="design-system__bottom-flex">
+                                        <div class="design-system__subsection">
+                                            <h4 class="design-system__subtitle">Status</h4>
+                                            <div class="ds-component-wrapper">
+                                                <img src="../assets/kutanapay/status.svg"
+                                                    alt="Account setup status stepper: create account, get your documents, personal information, business information, approval"
+                                                    class="ds-asset-img" style="max-width: 155px;">
+                                            </div>
+                                        </div>
+
+                                        <div class="design-system__subsection">
+                                            <h4 class="design-system__subtitle">Labels</h4>
+                                            <div class="ds-component-wrapper ds-component-wrapper--stack">
+                                                <img src="../assets/kutanapay/complete-label.svg"
+                                                    alt="Completed label" class="ds-asset-img" style="max-width: 85px;">
+                                                <img src="../assets/kutanapay/progress-label.svg"
+                                                    alt="In progress label" class="ds-asset-img" style="max-width: 82px;">
+                                                <img src="../assets/kutanapay/failed-label.svg" alt="Failed label"
+                                                    class="ds-asset-img" style="max-width: 62px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Right Column: Colour Pallet -->
+                                <div class="design-system__right-col">
+                                    <div class="design-system__subsection">
+                                        <h4 class="design-system__subtitle">Colour pallet</h4>
+                                        <div class="palette-showcase">
+                                            <div class="palette-card">
+                                                <div class="palette-color" style="background-color: #2B6DEE;"></div>
+                                                <div class="palette-info">
+                                                    <div class="palette-name">Primary colour</div>
+                                                    <div class="palette-hex">#2B6DEE</div>
+                                                </div>
+                                            </div>
+                                            <div class="palette-card">
+                                                <div class="palette-color" style="background-color: #568DF4;"></div>
+                                                <div class="palette-info">
+                                                    <div class="palette-name">Secondary #1</div>
+                                                    <div class="palette-hex">#568DF4</div>
+                                                </div>
+                                            </div>
+                                            <div class="palette-card">
+                                                <div class="palette-color" style="background-color: #6C63FF;"></div>
+                                                <div class="palette-info">
+                                                    <div class="palette-name">Tertiary #1</div>
+                                                    <div class="palette-hex">#6C63FF</div>
+                                                </div>
+                                            </div>
+                                            <div class="palette-card">
+                                                <div class="palette-color" style="background-color: #DFD1FF;"></div>
+                                                <div class="palette-info">
+                                                    <div class="palette-name">Tertiary #2</div>
+                                                    <div class="palette-hex">#DFD1FF</div>
+                                                </div>
+                                            </div>
+                                            <div class="palette-card">
+                                                <div class="palette-color"
+                                                    style="background: linear-gradient(135deg, #2B6DEE, #6C63FF);">
+                                                </div>
+                                                <div class="palette-info">
+                                                    <div class="palette-name">Poster</div>
+                                                    <div class="palette-hex">Linear</div>
+                                                </div>
+                                            </div>
+                                            <div class="palette-card">
+                                                <div class="palette-color"
+                                                    style="background-color: #FFFFFF; border-bottom: 1px solid var(--color-gray-light);">
+                                                </div>
+                                                <div class="palette-info">
+                                                    <div class="palette-name">BG #1</div>
+                                                    <div class="palette-hex">#FFFFFF</div>
+                                                </div>
+                                            </div>
+                                            <div class="palette-card">
+                                                <div class="palette-color" style="background-color: #E9F1FF;"></div>
+                                                <div class="palette-info">
+                                                    <div class="palette-name">BG #2</div>
+                                                    <div class="palette-hex">#E9F1FF</div>
+                                                </div>
+                                            </div>
+                                            <div class="palette-card">
+                                                <div class="palette-color" style="background-color: #000103;"></div>
+                                                <div class="palette-info">
+                                                    <div class="palette-name">Text #1</div>
+                                                    <div class="palette-hex">#000103</div>
+                                                </div>
+                                            </div>
+                                            <div class="palette-card">
+                                                <div class="palette-color" style="background-color: #1E2D2F;"></div>
+                                                <div class="palette-info">
+                                                    <div class="palette-name">Text #2</div>
+                                                    <div class="palette-hex">#1E2D2F</div>
+                                                </div>
+                                            </div>
+                                            <div class="palette-card">
+                                                <div class="palette-color" style="background-color: #DC2626;"></div>
+                                                <div class="palette-info">
+                                                    <div class="palette-name">Error</div>
+                                                    <div class="palette-hex">#DC2626</div>
+                                                </div>
+                                            </div>
+                                            <div class="palette-card">
+                                                <div class="palette-color" style="background-color: #00A877;"></div>
+                                                <div class="palette-info">
+                                                    <div class="palette-name">Success</div>
+                                                    <div class="palette-hex">#00A877</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Takeaways Section -->
+        <section id="key-takeaways" class="case-study__section case-study__takeaways">
+            <div class="container">
+                <h2 class="case-study__section-title--red">Key Takeaways</h2>
+                <div class="case-study__divider"></div>
+
+                <div class="takeaways__content">
+                    <div class="takeaways__block">
+                        <h3 class="takeaways__subtitle">• Challenges:</h3>
+                        <div class="takeaways__list">
+                            <p class="takeaways__item">- Adhering to regional financial regulations (GDPR, PSD2,
+                                KYC/AML) while maintaining design consistency.</p>
+                            <p class="takeaways__item">- Building trust in a digital financial environment where users
+                                cannot see or interact physically with their money or advisors.</p>
+                            <p class="takeaways__item">- Ensuring usability across demographics including unbanked or
+                                low-digital-literacy users.</p>
+                        </div>
+                    </div>
+
+                    <div class="takeaways__block">
+                        <h3 class="takeaways__subtitle">• Lessons learned:</h3>
+                        <div class="takeaways__list">
+                            <p class="takeaways__item">- Tiny feedback moments such as real-time validations make
+                                complex financial actions feel safe.</p>
+                            <p class="takeaways__item">- Designing consent screens and privacy dashboards became
+                                opportunities to build trust through transparency.</p>
+                            <p class="takeaways__item">- Iterative feedback loops with developers and QA helped
+                                identify edge cases (e.g., failed transactions, API delays). This taught me to
+                                prototype realistically, anticipating system states and errors.</p>
+                        </div>
+                    </div>
+
+                    <div class="takeaways__actions">
+                        <a href="https://app.kutanapay.com/signup" class="btn btn--outline" target="_blank"
+                            rel="noopener">See it live</a>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <!-- Overview Section -->
-        <section class="case-study__section">
-            <div class="container">
-                <h2 class="case-study__section-title">Overview</h2>
-                <p>Kutanapay is an enterprise-grade payment solution designed for businesses of all sizes. The platform
-                    provides secure payment processing, transaction management, and comprehensive analytics.</p>
-                <div class="case-study__image">
-                    <img src="../assets/kutanapay/kutanapay.svg" alt="Kutanapay platform overview" loading="lazy">
-                </div>
-            </div>
-        </section>
-
-        <!-- Problem Section -->
-        <section class="case-study__section">
-            <div class="container">
-                <h2 class="case-study__section-title">The Challenge</h2>
-                <p>Businesses need a reliable, secure payment solution that can handle high transaction volumes while
-                    providing detailed insights. The challenge was to create an interface that balances powerful
-                    features with ease of use.</p>
-            </div>
-        </section>
-
-        <!-- Solution Section -->
-        <section class="case-study__section">
-            <div class="container">
-                <h2 class="case-study__section-title">The Solution</h2>
-                <p>We designed a comprehensive platform with intuitive navigation, real-time transaction monitoring, and
-                    robust security features. The interface prioritizes clarity and efficiency for business users.</p>
-                <div class="case-study__image">
-                    <img src="../assets/kutanapay/kutana-trade-secure.svg" alt="Kutana trade secure features"
-                        loading="lazy">
-                </div>
-            </div>
-        </section>
-
-        <!-- Branding Section -->
-        <section class="case-study__section">
-            <div class="container">
-                <h2 class="case-study__section-title">Brand Identity</h2>
-                <p>We developed a strong brand identity that conveys trust, security, and professionalism.</p>
-                <div class="case-study__image">
-                    <img src="../assets/kutanapay/kutana-logo.svg" alt="Kutanapay logo" loading="lazy">
-                </div>
-            </div>
-        </section>
-
-        <!-- Results Section -->
-        <section class="case-study__section">
-            <div class="container">
-                <h2 class="case-study__section-title">Results & Impact</h2>
-                <p>Kutanapay has been successfully adopted by numerous businesses, processing millions of transactions
-                    securely. The platform has received positive feedback for its user-friendly interface and
-                    comprehensive feature set.</p>
+                <!-- Back to Top Button -->
+                <button class="btn-back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+                    aria-label="Back to Top">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F64134" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 19V5M5 12l7-7 7 7" />
+                    </svg>
+                </button>
             </div>
         </section>
     </main>
@@ -132,26 +936,83 @@
     <footer class="footer">
         <div class="container footer__container">
             <div class="footer__social">
-                <a href="https://linkedin.com" class="footer__social-link" aria-label="LinkedIn" target="_blank"
+                <a href="https://www.linkedin.com/in/melikamzg/" class="footer__social-link" aria-label="LinkedIn" target="_blank"
                     rel="noopener">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                         <path
                             d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                     </svg>
                 </a>
-                <a href="mailto:hello@melika.com" class="footer__social-link" aria-label="Email">
+                <a href="mailto:melikamzg@outlook.com" class="footer__social-link" aria-label="Email">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                         <path
                             d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z" />
                     </svg>
                 </a>
             </div>
-            <p class="footer__credit">Created by Melika Mohammadzadeh</p>
+            <p class="footer__credit">Created by Melika Gavasaraei</p>
         </div>
     </footer>
 
+    <!-- Fullscreen Overlay -->
+    <div class="fullscreen-overlay" id="fullscreenOverlay">
+        <button class="fullscreen-overlay__close" onclick="closeFullscreen()">&times;</button>
+        <div class="fullscreen-overlay__content" id="fullscreenContent"></div>
+    </div>
+
     <!-- JavaScript -->
     <script src="../js/main.js"></script>
+    <script>
+        // Fullscreen content functionality
+        function openFullscreen(elementId) {
+            const element = document.getElementById(elementId);
+            const overlay = document.getElementById('fullscreenOverlay');
+            const fullscreenContent = document.getElementById('fullscreenContent');
+
+            fullscreenContent.innerHTML = '';
+
+            // Check if there's an affinity-grid (HTML content)
+            const affinityGrid = element.querySelector('.affinity-grid');
+            if (affinityGrid) {
+                const clone = affinityGrid.cloneNode(true);
+                clone.classList.add('fullscreen-affinity-grid');
+                fullscreenContent.appendChild(clone);
+            } else {
+                // Check if there's an image
+                const img = element.querySelector('img');
+                if (img) {
+                    const fullImg = document.createElement('img');
+                    fullImg.src = img.src;
+                    fullImg.alt = img.alt;
+                    fullImg.className = 'fullscreen-overlay__image';
+                    fullscreenContent.appendChild(fullImg);
+                }
+            }
+
+            overlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeFullscreen() {
+            const overlay = document.getElementById('fullscreenOverlay');
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        // Close on overlay click
+        document.getElementById('fullscreenOverlay').addEventListener('click', function (e) {
+            if (e.target === this) {
+                closeFullscreen();
+            }
+        });
+
+        // Close on Escape key
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                closeFullscreen();
+            }
+        });
+    </script>
 </body>
 
 </html>
