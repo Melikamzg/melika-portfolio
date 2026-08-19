@@ -79,6 +79,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 const contactForm = document.getElementById('contactForm');
 
 if (contactForm) {
+    const submitBtn = document.getElementById('formSubmitBtn');
+    const submitBtnDefaultText = submitBtn ? submitBtn.textContent : 'Submit';
+
     contactForm.addEventListener('submit', (e) => {
         e.preventDefault();
 
@@ -100,9 +103,36 @@ if (contactForm) {
             return;
         }
 
-        // Success message (in a real app, this would send to a server)
-        alert('Thank you for your message! I will get back to you soon.');
-        contactForm.reset();
+        if (typeof emailjs === 'undefined') {
+            alert('Sorry, the message service is currently unavailable. Please try again later.');
+            return;
+        }
+
+        // Disable the button while sending
+        if (submitBtn) {
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Sending...';
+        }
+
+        emailjs.send('service_b78tppc', 'template_u7ohqyd', {
+            name: name,
+            email: email,
+            message: message,
+        })
+            .then(() => {
+                alert('Thank you for your message! I will get back to you soon.');
+                contactForm.reset();
+            })
+            .catch((error) => {
+                console.error('EmailJS error:', error);
+                alert('Something went wrong while sending your message. Please try again or email me directly.');
+            })
+            .finally(() => {
+                if (submitBtn) {
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = submitBtnDefaultText;
+                }
+            });
     });
 }
 

@@ -73,7 +73,7 @@
                             placeholder="Hi..."></textarea>
                     </div>
 
-                    <button type="submit" class="btn btn--outline form-submit">Submit</button>
+                    <button type="submit" class="btn btn--outline form-submit" id="formSubmitBtn">Submit</button>
                 </form>
             </div>
 
@@ -131,6 +131,16 @@
             <p class="footer__credit">Created by Melika Gavasaraei</p>
         </div>
     </footer>
+
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "ZQRkNeryKmICt4I8W",
+            });
+        })();
+    </script>
 
     <!-- JavaScript -->
     <script src="js/main.js"></script>
